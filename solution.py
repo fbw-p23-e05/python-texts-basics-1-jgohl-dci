@@ -20,5 +20,24 @@ print('Population:', population)
 
 # T4
 text = "Berlin is surrounded by the State of Brandenburg and contiguous with Potsdam, Brandenburg's capital."
+word = 'capital'
 
-print(len(text))
+if word in text:
+    print(word, ': ',text.find(word), sep='')
+
+
+# T5
+text = 'Berlin straddles the banks of the Spree, which flows into the Havel (a tributary of the Elbe) in the western borough of Spandau.'
+text_list = text.split()
+
+print(text_list[0: ])       # [0: ] not necessary, just testing stuff
+
+
+# T6
+text = "Berlin is surrounded by the State of Brandenburg and contiguous with Potsdam, Brandenburg's capital."
+word = 'capital'
+
+if word in text:
+    text = text.replace(word, 'capital of Germany')
+
+print(text)
