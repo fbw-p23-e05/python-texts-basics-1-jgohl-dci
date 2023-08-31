@@ -14,7 +14,8 @@ print(city.capitalize(), ': ',population, sep='')
 city = 'london'
 population = 9000000
 
-print('City: ', city.capitalize(), type(city) == str)
+# print('City: ', city.capitalize(), type(city) == str)
+print('City: ', city.capitalize(), city.isalpha())
 print('Population:', population)
 
 
